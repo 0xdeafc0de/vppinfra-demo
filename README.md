@@ -10,17 +10,26 @@ Vector Packet Processing (VPP) is a high-performance packet processing framework
 Before starting, ensure you have the following:
 
 1. **VPP Installed**:
+   Ensure you have VPP and its development headers installed.
+   
    - Install VPP on your system. On Ubuntu, you can install it using:
      ```bash
      sudo apt-get install vpp-dev
      ```
    - If you are building VPP from source, ensure the `vppinfra` library is built and available.
+   - ```bash
+     git clone https://github.com/FDio/vpp.git
+     cd vpp
+     make install-dep
+     make build
+     ```
+     This will install the necessary vppinfra static libraries and headers.
 
-2. **Development Tools**:
+3. **Development Tools**:
    - A C compiler (e.g., `gcc` or `clang`).
    - `make` or a similar build tool.
 
-3. **VPP Source Code** (Optional):
+4. **VPP Source Code** (Optional):
    - If you are using a custom build of VPP, ensure you have the source code available.
 
 ## Step 1: Write a Test Application
