@@ -1,6 +1,9 @@
 # Using VPP's `vppinfra` Library in an External Application
 
-Vector Packet Processing (VPP) is a high-performance packet processing framework that provides a rich set of libraries for building network applications. One of its core libraries, `vppinfra`, offers powerful data structures like vectors, hash tables, and more, which can be used in external applications. This article walks you through the process of compiling a test application that uses VPP's vector implementation from the `vppinfra` library.
+Vector Packet Processing (VPP) is a high-performance packet processing framework that provides a rich set of libraries for building network applications. One of its core libraries, `vppinfra`, offers powerful data structures like vectors, hash tables like bihash and more, which can be used in external applications. This article walks you through the process of compiling a test application that uses VPP's vector implementation from the `vppinfra` library.
+
+1. **Vectors:** Dynamically sized arrays, similar to std::vector in C++ but with lower-level control.
+2. **Bihash:** A lockless, multi-bucket hash table implementation optimized for fast lookups and insertions.
 
 ## Prerequisites
 
