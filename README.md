@@ -113,7 +113,7 @@ Using gdb
 Compile the program with debug symbols:
 
 ```bash
-gcc -g -o test_vec test_vec.c -I/ws/vpp/src/ -L/ws/vpp/build-root/build-vpp_debug-native/vpp/lib/ -lvppinfra
+gcc -g -o test_vec test_vec.c -I/ws/vpp/src/ -L/ws/vpp/build-root/build-vpp_debug-native/vpp/lib/x86_64-linux-gnu -lvppinfra
 ```
 Run the program with gdb:
 
