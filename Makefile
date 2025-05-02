@@ -14,7 +14,7 @@ else
 	VPP_BUILD_DIR := $(BUILD_ROOT)/build-vpp_debug-native
 endif
 
-VPP_LIB_DIR := $(VPP_BUILD_DIR)/vpp/lib
+VPP_LIB_DIR := $(VPP_BUILD_DIR)/vpp/lib/x86_64-linux-gnu
 VPP_LIB_FILE := $(VPP_LIB_DIR)/libvppinfra.so
 
 CC = gcc
@@ -23,6 +23,7 @@ LDFLAGS = -L$(VPP_LIB_DIR) -lvppinfra
 
 # Build target
 TARGET = test_vec
+# SRC = src/test_bihash.c
 SRC = src/test_vec.c
 
 all: check_lib $(TARGET)
